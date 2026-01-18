@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col bg-blue-100 items-center w-full lg:h-[100vh] lg:justify-center py-10 md:py-16 lg:py-20">
+    <div class="flex flex-col bg-blue-100 items-center w-full lg:h-[80vh] py-10 md:py-16 lg:py-20 lg:justify-center">
         <div class="flex flex-row mt-8 md:mt-0 gap-1.5 md:gap-2.5">
             <p class="text-3xl md:text-4xl lg:text-5xl font-bold text-black"  data-aos="fade-up" data-aos-duration="1000">{{ t('skillsTitle') }}</p><span  data-aos="fade-up" data-aos-duration="1000" class="sm:text-4xl text-3xl font-bold text-blue-600 md:text-4xl lg:text-5xl">{{ t('skillsHighlight') }}</span>
         </div>

@@ -1,15 +1,15 @@
 <template>
     <div class="flex flex-row gap-2">
-        <p class="text-4xl font-bold text-black"  data-aos="fade-up" data-aos-duration="1000">{{ t('aboutMeTitle') }}</p><span  data-aos="fade-up" data-aos-duration="1000" class="text-4xl font-bold text-blue-600">{{ t('aboutMeHighlight') }}</span>
+        <p class="text-3xl md:text-4xl lg:text-5xl font-bold text-black"  data-aos="fade-up" data-aos-duration="1000">{{ t('aboutMeTitle') }}</p><span  data-aos="fade-up" data-aos-duration="1000" class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">{{ t('aboutMeHighlight') }}</span>
     </div>
-    <p class="mt-5 text-gray-700 text-lg px-10 md:w-200 text-center mt-5 mb-5"  data-aos="fade-up" data-aos-duration="1000">{{ t('aboutMeDescription') }}</p>
+    <p class="mt-5 text-md md:text-lg text-gray-700 px-10 md:w-200 text-center mt-5 mb-5"  data-aos="fade-up" data-aos-duration="1000">{{ t('aboutMeDescription') }}</p>
     <div class="flex flex-row info-data items-center gap-15 mx-20 md:px-10 mt-10 mb-20">
         <div class="md:w-1/4 mb-10 md:mb-0 aos-init aos-animate box">
             <img data-aos="fade-right" data-aos-duration="1000" src="/Users/cont2/Pictures/Photos Library.photoslibrary/resources/derivatives/2/2B58BBBA-343D-4345-8D23-52322B01A587_1_105_c.jpeg" alt="Profile" class="rounded-lg shadow-xl mx-auto w-[70%] md:w-full">
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" class="flex flex-col gap-3 flex-1 items-center md:items-start">
-            <p class="text-black text-4xl font-bold text-center md:text-start md:text-2xl">{{ t('whoAmI') }}</p>
-            <p class="mt-2 text-gray-700 text-center md:text-start">{{ t('whoAmIDescription') }}</p>
+            <p class="text-black text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-start md:text-2xl">{{ t('whoAmI') }}</p>
+            <p class="mt-2 text-md md:text-lg lg:text-xl text-gray-700 text-center md:text-start">{{ t('whoAmIDescription') }}</p>
             <div class="flex md:flex-row flex-col gap-3 justify-between mt-4 md:ml-0">
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-3">

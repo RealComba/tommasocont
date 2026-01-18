@@ -49,8 +49,8 @@ const baseProjects = [
 	{
 		title: 'Sito Streaming',
 		titleEn: 'Streaming Website',
-		description: 'Sito personale per vedere film e serie in streaming.',
-		descriptionEn: 'Personal website to watch movies and TV series in streaming.',
+		description: 'Sito personale per vedere trailer di film e serie tv da YouTube.',
+		descriptionEn: 'Personal website to watch movies and TV series trailers from YouTube.',
 		image: img1,
 		technologies: ['React', 'Tailwind', 'JavaScript'],
 		githubUrl: 'https://github.com/RealComba/react-movie.git',

@@ -4,9 +4,9 @@
 			<p class="text-3xl md:text-4xl lg:text-5xl  font-bold text-black">{{ t('projectsTitle') }}</p>
 			<span class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">{{ t('projectsHighlight') }}</span>
 		</div>
-		<div class="card w-full mt-8 md:mt-10 flex flex-col lg:flex-row gap-8 sm:gap-4 md:gap-6 lg:gap-8 px-8 sm:px-6 md:px-8 lg:px-10 items-center justify-center flex-wrap" data-aos="fade-up" data-aos-duration="1000">
+		<div class="card w-full mt-8 md:mt-10 flex flex-col lg:flex-row gap-8 sm:gap-4 md:gap-6 lg:gap-8 px-8 sm:px-6 md:px-8 lg:px-10 items-stretch justify-center flex-wrap" data-aos="fade-up" data-aos-duration="1000">
 			<div v-for="(project, index) in projectsList" 
-			class="bg-gray-100 rounded-xl h-auto w-full sm:w-[65%] md:w-[50%] lg:w-[28%] shadow-lg hover:shadow-xl transition overflow-hidden flex flex-col"
+			class="bg-gray-100 rounded-xl h-full min-h-[420px] w-full sm:w-[65%] md:w-[50%] lg:w-[28%] shadow-lg hover:shadow-xl transition overflow-hidden flex flex-col"
 			:key="project.title">
 				<img class="rounded-t-xl h-40 sm:h-44 md:h-48 w-full object-cover" :src="project.image" alt="">
 				<div class="text px-4 md:px-6 py-4 md:py-5 flex-1 flex flex-col">

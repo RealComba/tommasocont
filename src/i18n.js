@@ -29,7 +29,7 @@ export const translations = {
     projects: {
       streaming: {
         title: 'Sito Streaming',
-        description: 'Sito personale per vedere film e serie in streaming.'
+        description: 'Sito personale per vedere trailer di film e serie tv.'
       },
       budgetManager: {
         title: 'Budget Manager',
@@ -67,7 +67,7 @@ export const translations = {
     projects: {
       streaming: {
         title: 'Streaming Website',
-        description: 'Personal website to watch movies and TV series in streaming.'
+        description: 'Personal website to watch movies and TV series trailers.'
       },
       budgetManager: {
         title: 'Budget Manager',

@@ -1,38 +1,330 @@
 <template>
+  <footer ref="footerEl" class="relative bg-[var(--ink)] text-white overflow-hidden">
+    <!-- soft glow, animated via GSAP -->
+    <div ref="glowA" class="pointer-events-none absolute -top-40 -right-20 w-[520px] h-[520px] rounded-full bg-[var(--sky-500)] opacity-25 blur-3xl"></div>
+    <div ref="glowB" class="pointer-events-none absolute -bottom-40 -left-20 w-[420px] h-[420px] rounded-full bg-[var(--sky-700)] opacity-30 blur-3xl"></div>
 
-<div class="sm:h-[35%] h-[25%] w-full flex flex-col items-center gap-5 bg-blue-700" data-aos="" data-aos-duration="800">
-    <div class="flex flex-row justify-between w-[100%] sm:w-[80%] px-4 sm:px-0 mt-10">
-        <div class="flex flex-col">
-            <p class="sm:text-4xl text-2xl text-white-500 font-semibold mb-5">Tommaso Cont</p>
-            <p class="sm:text-lg text-md text-white-500">Frontend Developer</p>
-        </div>
-        <div class="flex flex-col social-icons gap-4">
-            <p class="sm:text-lg text-md text-white-500">+39 345 481 5672</p>
-            <div class="flex flex-row gap-4">
-                <button @click="openLink('https://www.linkedin.com/in/tommaso-cont-5b7488348/')" class="text-white-600 font-semibold flex items-center gap-2">
-                    <svg class="sm:w-10 sm:h-10 w-8 h-8 hover:fill-blue-500 hover:bg-white rounded-md hover:scale-120 transition delay-30 duration-300 ease-in-out" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                </button>
-                <button @click="openLink('https://github.com/RealComba')" class="text-white-600 font-semibold flex items-center gap-2">
-                    <svg class="sm:w-10 sm:h-10 w-8 h-8 hover:fill-purple-500 hover:bg-white rounded-full hover:scale-120 transition delay-30 duration-300 ease-in-out" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                    </svg>
-                </button>
-                <button @click="openLink('mailto:tommaso.cont2004@gmail.com')" class="text-white-600 font-semibold flex items-center gap-2">
-                    <svg class="sm:w-10 sm:h-10 w-8 h-8 hover:fill-purple-500 hover:scale-130 transition delay-30 duration-300 ease-in-out" viewBox="0 -4 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>mail</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="fff" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-412.000000, -259.000000)" fill="#fff"> <path d="M442,279 C442,279.203 441.961,279.395 441.905,279.578 L433,270 L442,263 L442,279 L442,279 Z M415.556,280.946 L424.58,271.33 L428,273.915 L431.272,271.314 L440.444,280.946 C440.301,280.979 415.699,280.979 415.556,280.946 L415.556,280.946 Z M414,279 L414,263 L423,270 L414.095,279.578 C414.039,279.395 414,279.203 414,279 L414,279 Z M441,261 L428,271 L415,261 L441,261 L441,261 Z M440,259 L416,259 C413.791,259 412,260.791 412,263 L412,279 C412,281.209 413.791,283 416,283 L440,283 C442.209,283 444,281.209 444,279 L444,263 C444,260.791 442.209,259 440,259 L440,259 Z" id="mail" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
-                </button>
-            </div>  
-        </div>
+    <!-- subtle grain dot pattern -->
+    <div class="absolute inset-0 opacity-[0.06] pointer-events-none footer-dots"></div>
+
+    <!-- =========== CTA =========== -->
+    <div class="relative max-w-6xl mx-auto px-6 pt-20 md:pt-28 pb-12">
+      <div class="flex flex-col gap-6 max-w-3xl">
+        <h2 ref="titleEl" class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02]">
+          <span class="word-wrap"><span class="word">{{ language === 'it' ? 'Lavoriamo' : "Let's" }}</span></span>
+          <span class="word-wrap"><span class="word" v-if="language !== 'it'">build</span></span>
+          <span class="word-wrap"><span class="word text-[var(--sky-300)]">{{ language === 'it' ? 'insieme.' : 'together.' }}</span></span>
+        </h2>
+        <p class="max-w-xl text-white/70 text-base md:text-lg leading-relaxed" data-reveal data-reveal-delay="0.1">
+          {{ language === 'it'
+            ? 'Hai un progetto, un\'idea o un\'opportunità di stage? Scrivimi.'
+            : 'Got a project, an idea or an internship opportunity? Get in touch.' }}
+        </p>
+        <a href="mailto:tommaso.cont2004@gmail.com"
+           class="cta-mail group" data-reveal data-reveal-delay="0.15">
+          <span class="cta-mail-text">tommaso.cont2004@gmail.com</span>
+          <span class="cta-mail-arrow">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+      </div>
     </div>
-    <p class="sm:pt-0 text-xs sm:text-sm text-white">© 2026 Tommaso Cont </p>
 
-</div>
+    <!-- =========== MARQUEE strip =========== -->
+    <div class="marquee" aria-hidden="true">
+      <div ref="marqueeTrack" class="marquee-track">
+        <span v-for="n in 8" :key="n" class="marquee-item">
+          {{ language === 'it' ? 'Disponibile per stage' : 'Available for internship' }}
+          <span class="marquee-dot">✦</span>
+          Verona · Italia
+          <span class="marquee-dot">✦</span>
+          tommaso.cont2004@gmail.com
+          <span class="marquee-dot">✦</span>
+        </span>
+      </div>
+    </div>
 
+    <!-- =========== columns =========== -->
+    <div class="relative max-w-6xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-10 border-t border-white/10">
+      <div class="col-span-2 md:col-span-2" data-reveal>
+        <p class="text-base font-semibold tracking-tight">Tommaso Cont</p>
+        <p class="text-white/60 text-sm mt-2 max-w-xs leading-relaxed">
+          Frontend Developer · Verona, IT
+        </p>
+      </div>
+
+      <div data-reveal data-reveal-delay="0.05">
+        <p class="footer-heading">{{ language === 'it' ? 'Sitemap' : 'Sitemap' }}</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about"    class="footer-link">{{ language === 'it' ? 'Chi sono' : 'About' }}</a></li>
+          <li><a href="#skills"   class="footer-link">{{ language === 'it' ? 'Competenze' : 'Skills' }}</a></li>
+          <li><a href="#projects" class="footer-link">{{ language === 'it' ? 'Progetti' : 'Projects' }}</a></li>
+        </ul>
+      </div>
+
+      <div data-reveal data-reveal-delay="0.1">
+        <p class="footer-heading">{{ language === 'it' ? 'Social' : 'Social' }}</p>
+        <div ref="socialEl" class="flex gap-2">
+          <a href="https://www.linkedin.com/in/tommaso-cont-5b7488348/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://github.com/RealComba" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.4.7-4.1-1.6-4.1-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.7-.3-5.5-1.4-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 3 .1 3.3.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+          </a>
+          <a href="mailto:tommaso.cont2004@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6.5L12 12l9-5.5V18a2 2 0 01-2 2H5a2 2 0 01-2-2V6.5zM21 5H3v.4l9 5.5 9-5.5V5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== bottom bar =========== -->
+    <div class="relative max-w-6xl mx-auto px-6 py-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-white/55">
+      <p>&copy; 2026 Tommaso Cont</p>
+      <a href="#" class="back-top group">
+        <span>{{ language === 'it' ? 'Torna su' : 'Back to top' }}</span>
+        <span class="back-top-arrow">↑</span>
+      </a>
+    </div>
+  </footer>
 </template>
 
 <script setup>
-const openLink = (url) => {
-    window.open(url, '_blank');
-};
+import { useI18n } from '../i18n';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const { language } = useI18n();
+
+const footerEl = ref(null);
+const titleEl = ref(null);
+const glowA = ref(null);
+const glowB = ref(null);
+const marqueeTrack = ref(null);
+const socialEl = ref(null);
+
+const scrollTriggers = [];
+const tweens = [];
+
+onMounted(() => {
+  // ===== Title: word reveal on enter =====
+  if (titleEl.value) {
+    const words = titleEl.value.querySelectorAll('.word');
+    const tw = gsap.fromTo(words,
+      { y: '110%', opacity: 0, rotate: 4 },
+      {
+        y: '0%', opacity: 1, rotate: 0,
+        duration: 1.1,
+        ease: 'power4.out',
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: titleEl.value,
+          start: 'top 85%',
+          once: true,
+        }
+      });
+    if (tw.scrollTrigger) scrollTriggers.push(tw.scrollTrigger);
+  }
+
+  // ===== Glow drift =====
+  if (glowA.value) {
+    const t1 = gsap.to(glowA.value, {
+      x: -40, y: 30,
+      duration: 8,
+      ease: 'sine.inOut',
+      yoyo: true,
+      repeat: -1,
+    });
+    tweens.push(t1);
+  }
+  if (glowB.value) {
+    const t2 = gsap.to(glowB.value, {
+      x: 50, y: -20,
+      duration: 10,
+      ease: 'sine.inOut',
+      yoyo: true,
+      repeat: -1,
+    });
+    tweens.push(t2);
+  }
+
+  // ===== Marquee: infinite loop =====
+  if (marqueeTrack.value) {
+    const distance = marqueeTrack.value.scrollWidth / 2;
+    const mq = gsap.to(marqueeTrack.value, {
+      x: -distance,
+      duration: 40,
+      ease: 'none',
+      repeat: -1,
+    });
+    tweens.push(mq);
+  }
+
+  // ===== Social buttons: stagger on scroll =====
+  if (socialEl.value) {
+    const btns = socialEl.value.querySelectorAll('.social-btn');
+    const tw = gsap.fromTo(btns,
+      { y: 20, opacity: 0, scale: 0.85 },
+      {
+        y: 0, opacity: 1, scale: 1,
+        duration: 0.7,
+        ease: 'back.out(2)',
+        stagger: 0.08,
+        scrollTrigger: {
+          trigger: socialEl.value,
+          start: 'top 90%',
+          once: true,
+        }
+      });
+    if (tw.scrollTrigger) scrollTriggers.push(tw.scrollTrigger);
+  }
+});
+
+onBeforeUnmount(() => {
+  scrollTriggers.forEach(s => s.kill());
+  tweens.forEach(t => t.kill());
+});
 </script>
+
+<style scoped>
+/* ===== Title word reveal ===== */
+.word-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 1.02;
+  padding-bottom: 0.05em;
+  margin-right: 0.18em;
+}
+.word {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* ===== CTA mail ===== */
+.cta-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  background: white;
+  color: var(--ink);
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 0;
+  overflow: hidden;
+  transition: background 320ms ease;
+}
+.cta-mail:hover { background: var(--sky-300); }
+.cta-mail-text {
+  padding: 0.85rem 0.5rem 0.85rem 1.4rem;
+}
+.cta-mail-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  transition: transform 380ms cubic-bezier(.16,.84,.24,1.06), background 320ms ease;
+}
+.cta-mail:hover .cta-mail-arrow {
+  transform: rotate(-45deg);
+  background: var(--sky-700);
+}
+
+/* ===== Marquee ===== */
+.marquee {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1.2rem 0;
+  position: relative;
+}
+.marquee-track {
+  display: inline-flex;
+  gap: 2.5rem;
+  will-change: transform;
+}
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  font-weight: 500;
+  white-space: nowrap;
+  padding-right: 2.5rem;
+}
+.marquee-dot {
+  color: var(--sky-300);
+  font-size: 12px;
+}
+
+/* ===== Dot pattern ===== */
+.footer-dots {
+  background-image: radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* ===== Footer columns ===== */
+.footer-heading {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.65);
+  transition: color 200ms ease, transform 240ms ease;
+  display: inline-block;
+}
+.footer-link:hover {
+  color: white;
+  transform: translateX(3px);
+}
+.social-btn {
+  width: 42px; height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 280ms cubic-bezier(.16,.84,.24,1.06);
+}
+.social-btn svg { width: 16px; height: 16px; }
+.social-btn:hover {
+  background: var(--sky-300);
+  color: var(--ink);
+  border-color: var(--sky-300);
+  transform: translateY(-3px) rotate(-4deg);
+}
+
+/* ===== Back to top ===== */
+.back-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  transition: color 200ms ease;
+}
+.back-top:hover { color: white; }
+.back-top-arrow {
+  display: inline-block;
+  transition: transform 360ms cubic-bezier(.16,.84,.24,1.06);
+}
+.back-top:hover .back-top-arrow {
+  transform: translateY(-4px);
+}
+</style>

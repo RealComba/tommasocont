@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './style.css'
 import App from './App.vue'
 
-AOS.init();
+gsap.registerPlugin(ScrollTrigger)
+
 createApp(App).mount('#app')

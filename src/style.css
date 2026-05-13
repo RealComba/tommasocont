@@ -1,52 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  line-height: 1.5;
+  --sky-50:  #f0f7ff;
+  --sky-100: #e0eefe;
+  --sky-200: #bbdcfd;
+  --sky-300: #84c0fb;
+  --sky-400: #469ef7;
+  --sky-500: #1f7ce8;
+  --sky-600: #1361c8;
+  --sky-700: #134ea1;
+  --sky-800: #154283;
+  --sky-900: #15386c;
+  --ink:     #0a1a33;
+  --ink-soft:#4b5870;
+  --paper:   #ffffff;
+  --bg:      #fafbfd;
+
+  --font-body: "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  font-family: var(--font-body);
+  line-height: 1.55;
   font-weight: 400;
-  background: #ffffff;
-  color: #ffffff;
+  background: var(--bg);
+  color: var(--ink);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body,
-#app {
-  height: 100%;
-  width: 100%;
+html { scroll-behavior: smooth; }
+html, body, #app { height: 100%; width: 100%; }
+body { margin: 0; background: var(--bg); overflow-x: hidden; }
+#app { margin: 0; padding: 0; }
+
+::selection { background: var(--sky-300); color: var(--ink); }
+
+.font-mono { font-family: var(--font-mono); }
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Section washes — gentle, not fighting the content */
+.sky-wash { background: var(--bg); }
+.paper-wash {
+  background: linear-gradient(180deg, var(--bg) 0%, #f1f6fc 100%);
 }
 
-body {
-  margin: 0;
-  background: #0b1b2b;
+/* Scroll reveal: starts hidden, GSAP reveals on enter */
+.reveal-y { opacity: 0; transform: translateY(28px); }
+.reveal-y.is-in { opacity: 1; transform: translateY(0); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: var(--sky-400);
+  border-radius: 999px;
+  border: 2px solid var(--bg);
 }
 
-#app {
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width: 996px) {
-  .box {
-    width: 200px;
-  }
-}
-
+@media (max-width: 996px) { .box { width: 200px; } }
 @media (max-width: 768px) {
-  .info-data {
-    flex-direction: column;
-  }
-  .box {
-    width: 100%;
-  }
+  .info-data { flex-direction: column; }
+  .box { width: 100%; }
 }
-
-@media (max-width: 351px) {
-  :root {
-    min-width: 350px;
-  }
-}
-
-
+@media (max-width: 351px) { :root { min-width: 350px; } }

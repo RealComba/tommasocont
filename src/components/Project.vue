@@ -483,11 +483,13 @@ onBeforeUnmount(() => {
 }
 
 .card-title {
-  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.85rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   font-weight: 600;
   color: var(--ink);
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .card-desc {

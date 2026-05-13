@@ -248,7 +248,10 @@ onBeforeUnmount(() => {
   border-radius: 0.75rem;
   background: rgba(255,255,255,0.7);
   border: 1px solid var(--sky-100);
+  min-width: 0;
+  overflow: hidden;
 }
+.info-tile dd { min-width: 0; }
 .info-label {
   font-size: 10px;
   text-transform: uppercase;
@@ -260,6 +263,15 @@ onBeforeUnmount(() => {
   font-size: 13px;
   color: var(--ink);
   font-weight: 500;
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+/* Email is the longest — make sure it shrinks to fit narrow tile */
+.info-tile a.info-value {
+  font-size: 12px;
+  letter-spacing: -0.005em;
 }
 
 /* ===== trajectory (horizontal on desktop) ===== */

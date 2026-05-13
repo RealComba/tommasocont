@@ -217,11 +217,18 @@ onBeforeUnmount(() => {
   border-radius: 999px;
   padding: 0;
   overflow: hidden;
+  max-width: 100%;
   transition: background 320ms ease;
 }
 .cta-mail:hover { background: var(--sky-300); }
 .cta-mail-text {
   padding: 0.85rem 0.5rem 0.85rem 1.4rem;
+  font-size: clamp(13px, 3.4vw, 16px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 .cta-mail-arrow {
   display: inline-flex;
@@ -233,11 +240,17 @@ onBeforeUnmount(() => {
   border-radius: 999px;
   background: var(--ink);
   color: white;
+  flex: none;
   transition: transform 380ms cubic-bezier(.16,.84,.24,1.06), background 320ms ease;
 }
 .cta-mail:hover .cta-mail-arrow {
   transform: rotate(-45deg);
   background: var(--sky-700);
+}
+
+/* Footer h2 title is huge — clamp on narrow screens */
+@media (max-width: 400px) {
+  .word-wrap { font-size: 0.85em; }
 }
 
 /* ===== Marquee ===== */

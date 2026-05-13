@@ -34,6 +34,13 @@ html, body, #app { height: 100%; width: 100%; }
 body { margin: 0; background: var(--bg); overflow-x: hidden; }
 #app { margin: 0; padding: 0; }
 
+/* Global text wrap safety — keep long words/URLs/emails inside their box */
+*, *::before, *::after { min-width: 0; }
+p, a, span, dd, h1, h2, h3, h4, h5, h6, li {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 ::selection { background: var(--sky-300); color: var(--ink); }
 
 .font-mono { font-family: var(--font-mono); }

@@ -49,15 +49,6 @@ body { margin: 0; background: var(--bg); overflow-x: hidden; }
 .reveal-y { opacity: 0; transform: translateY(28px); }
 .reveal-y.is-in { opacity: 1; transform: translateY(0); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
 
-/* Custom scrollbar */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb {
-  background: var(--sky-400);
-  border-radius: 999px;
-  border: 2px solid var(--bg);
-}
-
 @media (max-width: 996px) { .box { width: 200px; } }
 @media (max-width: 768px) {
   .info-data { flex-direction: column; }

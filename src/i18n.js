@@ -6,14 +6,14 @@ export const translations = {
   it: {
     // Hero section
     heroTitle: 'Tommaso Cont!',
-    heroSubtitle: 'Frontend Developer creating awesome web experiences',
+    heroSubtitle: 'Frontend Developer',
     
     // About Me
     aboutMeTitle: 'Il mio',
     aboutMeHighlight: 'Percorso',
-    aboutMeDescription: 'La mia passione per lo sviluppo web è iniziata dal percorso presso il Lorgna-Pindemonte, dove ho avuto modo di approcciarmi con le prime interfacce web, proseguendo poi il mio percorso presso ITS Last.',
+    aboutMeDescription: 'Mi sono avvicinato allo sviluppo web durante le superiori, imparando a creare le mie prime interfacce. Ora sto completando la mia formazione come Web Developer all\'ITS LAST.',
     whoAmI: 'Chi Sono?',
-    whoAmIDescription: 'Sono uno studente del corso Web Developer presso ITS LAST, con l\'obiettivo di diventare una figura Front-End, alla ricerca di un\'esperienza di stage per ampliare le mie consocenze.',
+    whoAmIDescription: 'Studio sviluppo web all\'ITS LAST. Mi sto specializzando nel front-end e cerco uno stage curriculare per mettermi alla prova sul campo.',
     downloadCV: 'Scarica il CV',
     
     // Skills
@@ -44,14 +44,14 @@ export const translations = {
   en: {
     // Hero section
     heroTitle: 'Tommaso Cont!',
-    heroSubtitle: 'Frontend Developer creating awesome web experiences',
+    heroSubtitle: 'Frontend Developer',
     
     // About Me
     aboutMeTitle: 'My',
     aboutMeHighlight: 'Journey',
-    aboutMeDescription: 'My passion for web development started at Lorgna-Pindemonte, where I first approached web interfaces, and continued at ITS Last.',
+    aboutMeDescription: 'My interest in web development began in high school, where I learned to create my first interfaces. I am now completing my training as a Web Developer at ITS LAST.',
     whoAmI: 'Who Am I?',
-    whoAmIDescription: 'I am a Web Developer student at ITS LAST, aiming to become a Front-End developer, and I\'m looking for an internship to expand my knowledge.',
+    whoAmIDescription: 'I study web development at ITS LAST. I am specializing in front-end and looking for a curricular internship to test my skills in the field.',
     downloadCV: 'Download CV',
     
     // Skills

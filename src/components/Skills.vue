@@ -182,6 +182,12 @@ const skills = [
     descIt: 'Express, REST API, npm ecosystem, build tools (Vite).',
     descEn: 'Express, REST APIs, npm ecosystem, build tools (Vite).' },
 
+  { name: 'Express.js', subtitle: 'Framework', category: 'backend', level: 75, years: 1,
+    bg: 'linear-gradient(135deg,#e5e7eb,#9ca3af)', color: '#111827',
+    icon: '<svg viewBox="0 0 24 24" fill="currentColor"><text x="50%" y="55%" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="10" fill="currentColor" alignment-baseline="middle">EX</text></svg>',
+    descIt: 'Sviluppo di API RESTful, middleware, routing.',
+    descEn: 'RESTful API development, middleware, routing.' },
+
   // Tools
   { name: 'GitHub',     subtitle: 'VCS',         category: 'tools', level: 85, years: 3,
     bg: 'linear-gradient(135deg,#1f2937,#0a0e16)', color: '#f9fafb',
@@ -200,6 +206,12 @@ const skills = [
     icon: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 4.7l-9.5 16.5c-.4.7-1.4.7-1.7 0L1.4 4.7c-.4-.7.2-1.5 1-1.4l9.7 1.6c.1 0 .2 0 .3 0l9.5-1.6c.7-.1 1.2.7.8 1.4zM15 7.5l-2 .3v6l1.6-3 1.5-.3-.5-3.1z"/></svg>',
     descIt: 'HMR fulmineo, plugin custom, ottimizzazioni build.',
     descEn: 'Lightning HMR, custom plugins, build optimizations.' },
+
+  { name: 'Prisma Studio', subtitle: 'Database GUI', category: 'tools', level: 75, years: 1,
+    bg: 'linear-gradient(135deg,#e0f2fe,#38bdf8)', color: '#0c4a6e',
+    icon: '<img src="https://plugins.jetbrains.com/files/14240/159812/icon/default.png" class="w-full h-full object-contain p-1" />',
+    descIt: 'Gestione visiva del database, query e manipolazione dati.',
+    descEn: 'Visual database management, querying and data manipulation.' },
 ];
 
 const active = ref('all');

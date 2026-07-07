@@ -6,7 +6,7 @@
 
       <!-- LEFT: title + lead text + meta -->
       <div class="lg:col-span-7 order-2 lg:order-1">
-        <p class="text-xs tracking-[0.25em] uppercase text-[var(--sky-700)] mb-4" data-reveal>
+        <p class="text-xs text-[var(--sky-700)] mb-4" data-reveal>
           {{ language === 'it' ? '— Profilo' : '— Profile' }}
         </p>
         <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.02] text-[var(--ink)]"
@@ -67,9 +67,7 @@
             <p class="font-semibold tracking-tight text-base">Tommaso Cont</p>
             <p class="text-[11px] opacity-85 tracking-wide mt-0.5">Verona, IT · Web Developer</p>
           </div>
-          <div class="portrait-corner">
-            <span class="font-mono text-[10px] tracking-widest">{{ ageYears }}Y</span>
-          </div>
+
         </div>
       </div>
     </div>
@@ -77,10 +75,10 @@
     <!-- ===== TIMELINE: horizontal, compact ===== -->
     <div class="mt-14 lg:mt-16" data-reveal data-reveal-delay="0.15">
       <div class="flex items-baseline justify-between mb-5">
-        <p class="text-xs tracking-[0.25em] uppercase text-[var(--sky-700)]">
+        <p class="text-xs text-[var(--sky-700)]">
           {{ language === 'it' ? '— Traiettoria' : '— Trajectory' }}
         </p>
-        <p class="text-[11px] tracking-wider uppercase text-[var(--ink-soft)]/70 tabular">
+        <p class="text-[11px] text-[var(--ink-soft)]/70">
           2018 — 2026
         </p>
       </div>
@@ -92,7 +90,7 @@
             <span v-if="i < timeline.length - 1" class="traj-line"></span>
           </div>
           <div class="traj-content">
-            <p class="text-[11px] tabular tracking-wide text-[var(--sky-700)] uppercase">{{ item.period }}</p>
+            <p class="text-[11px] text-[var(--sky-700)]">{{ item.period }}</p>
             <h3 class="text-lg md:text-xl font-semibold text-[var(--ink)] tracking-tight mt-1">
               {{ language === 'it' ? item.titleIt : item.titleEn }}
             </h3>
@@ -114,6 +112,7 @@
 <script setup>
 import { useI18n } from '../i18n';
 import CVFile from '../assets/Tommaso Cont CV.pdf';
+import profileImgSrc from '../assets/profile.jpeg';
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -134,7 +133,7 @@ const initialsAvatar =
             font-weight="600" font-size="200" fill="white" opacity="0.95">TC</text>
     </svg>`);
 
-const profileImg = ref('/Users/cont2/Pictures/Photos Library.photoslibrary/resources/derivatives/2/2B58BBBA-343D-4345-8D23-52322B01A587_1_105_c.jpeg');
+const profileImg = ref(profileImgSrc);
 const onImgError = () => { profileImg.value = initialsAvatar; };
 
 const ageYears = computed(() => {
@@ -163,8 +162,8 @@ const timeline = computed(() => [
     period: '2026 →',
     titleIt: language.value === 'it' ? 'Stage in azienda' : 'Internship',
     titleEn: 'Internship',
-    descIt: 'Cerco un\'esperienza concreta dove portare entusiasmo, curiosità e una solida base front-end.',
-    descEn: 'Looking for hands-on experience where I can bring enthusiasm, curiosity and a solid front-end foundation.',
+    descIt: 'Cerco un\'esperienza di stage per mettere alla prova le mie competenze e crescere professionalmente nel ruolo di sviluppatore front-end.',
+    descEn: 'Looking for an internship opportunity to apply my skills and grow professionally as a front-end developer.',
     future: true,
   },
 ]);

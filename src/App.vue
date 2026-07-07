@@ -35,13 +35,6 @@
 
       <!-- hero content -->
       <div ref="heroContent" class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-white text-center">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/40 bg-white/10 backdrop-blur-md text-[11px] md:text-xs tracking-wider uppercase font-medium mb-7">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
-          </span>
-          {{ language === 'it' ? 'Disponibile per stage' : 'Available for internship' }}
-        </div>
 
         <h1 ref="heroTitle" class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-[0.98]">
           {{ t('heroTitle') }}

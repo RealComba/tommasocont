@@ -139,6 +139,16 @@ const baseProjects = [
     technologies: ['Vue.js', 'Tailwind', 'Leaflet'],
     githubUrl: 'https://github.com/RealComba/Interactive-Europe-Map',
   },
+  {
+    title: 'Social Network',
+    titleEn: 'Social Network',
+    year: '2026',
+    description: 'Social network full stack sviluppato con Vue.js, Express.js e PostgreSQL.',
+    descriptionEn: 'Full stack social network developed with Vue.js, Express.js, and PostgreSQL.',
+    image: img1,
+    technologies: ['Vue.js', 'Express.js', 'PostgreSQL'],
+    githubUrl: 'https://github.com/RealComba',
+  },
 ];
 
 const projectsList = computed(() =>

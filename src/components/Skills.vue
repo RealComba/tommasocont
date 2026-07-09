@@ -352,4 +352,27 @@ onBeforeUnmount(() => {
   .skill-wrap { animation: none; }
   .skill-card { transition: transform 600ms ease; }
 }
+
+@media (max-width: 640px) {
+  .skill-card {
+    min-height: 17rem; /* Prevents confidence bar / status from overflowing on mobile */
+  }
+  .card-face {
+    padding: 1rem; /* Tighter padding for more horizontal space */
+  }
+  .card-face h3 {
+    font-size: 1.05rem; /* Slightly smaller title to prevent layout breaking */
+  }
+  .card-face p {
+    font-size: 11px; /* Tighter details text */
+  }
+  .logo-box {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .logo-box :deep(svg) {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
 </style>

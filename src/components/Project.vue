@@ -72,7 +72,7 @@
               </div>
 
               <a :href="p.githubUrl" target="_blank" rel="noopener noreferrer" class="card-cta">
-                <span>{{ language === 'it' ? 'GitHub' : 'GitHub' }}</span>
+                <span>{{ p.linkText ? (language === 'it' ? p.linkText : p.linkTextEn) : 'GitHub' }}</span>
                 <span class="cta-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M7 17L17 7M9 7h8v8"/>
@@ -91,6 +91,7 @@
 import img1 from '../assets/image.png';
 import img2 from '../assets/Screenshot 2026-01-14 alle 14.42.12.png';
 import img3 from '../assets/Screenshot 2026-01-14 alle 14.56.01.png';
+import imgErasmus from '../assets/erasmusmeet.png';
 import { useI18n } from '../i18n';
 import { computed, ref, onMounted, onBeforeUnmount } from 'vue';
 import { gsap } from 'gsap';
@@ -109,6 +110,18 @@ const currentIndex = ref(0);
 const isMobile = ref(false);
 
 const baseProjects = [
+  {
+    title: 'ErasmusMeet (Social Network)',
+    titleEn: 'ErasmusMeet (Social Network)',
+    year: '2026',
+    description: 'Social network full stack per studenti Erasmus per connettersi e incontrarsi, sviluppato con Vue.js, Express.js e PostgreSQL.',
+    descriptionEn: 'Full stack social network for Erasmus students to connect and meet, developed with Vue.js, Express.js, and PostgreSQL.',
+    image: imgErasmus,
+    technologies: ['Vue.js', 'Express.js', 'PostgreSQL'],
+    githubUrl: 'https://erasmus-meet.vercel.app/',
+    linkText: 'Visita',
+    linkTextEn: 'Visit',
+  },
   {
     title: 'Sito Streaming',
     titleEn: 'Streaming Website',
@@ -138,16 +151,6 @@ const baseProjects = [
     image: img3,
     technologies: ['Vue.js', 'Tailwind', 'Leaflet'],
     githubUrl: 'https://github.com/RealComba/Interactive-Europe-Map',
-  },
-  {
-    title: 'Social Network',
-    titleEn: 'Social Network',
-    year: '2026',
-    description: 'Social network full stack sviluppato con Vue.js, Express.js e PostgreSQL.',
-    descriptionEn: 'Full stack social network developed with Vue.js, Express.js, and PostgreSQL.',
-    image: img1,
-    technologies: ['Vue.js', 'Express.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/RealComba',
   },
 ];
 

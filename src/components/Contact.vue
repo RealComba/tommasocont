@@ -17,8 +17,8 @@
         </h2>
         <p class="max-w-xl text-white/70 text-base md:text-lg leading-relaxed" data-reveal data-reveal-delay="0.1">
           {{ language === 'it'
-            ? 'Hai un progetto, un\'idea o un\'opportunità di stage? Scrivimi.'
-            : 'Got a project, an idea or an internship opportunity? Get in touch.' }}
+            ? 'Hai un progetto, un\'idea o un\'opportunità lavorativa? Scrivimi.'
+            : 'Got a project, an idea or a career opportunity? Get in touch.' }}
         </p>
         <a href="mailto:tommaso.cont2004@gmail.com"
            class="cta-mail group" data-reveal data-reveal-delay="0.15">
@@ -36,7 +36,7 @@
     <div class="marquee" aria-hidden="true">
       <div ref="marqueeTrack" class="marquee-track">
         <span v-for="n in 8" :key="n" class="marquee-item">
-          {{ language === 'it' ? 'Disponibile per stage' : 'Available for internship' }}
+          {{ language === 'it' ? 'Disponibile a nuove opportunità' : 'Open to work' }}
           <span class="marquee-dot">✦</span>
           Verona · Italia
           <span class="marquee-dot">✦</span>
@@ -51,7 +51,7 @@
       <div class="col-span-2 md:col-span-2" data-reveal>
         <p class="text-base font-semibold tracking-tight">Tommaso Cont</p>
         <p class="text-white/60 text-sm mt-2 max-w-xs leading-relaxed">
-          Frontend Developer · Verona, IT
+          Full Stack Developer · Verona, IT
         </p>
       </div>
 

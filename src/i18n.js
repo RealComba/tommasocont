@@ -6,14 +6,14 @@ export const translations = {
   it: {
     // Hero section
     heroTitle: 'Tommaso Cont!',
-    heroSubtitle: 'Frontend Developer',
+    heroSubtitle: 'Full Stack Developer',
     
     // About Me
     aboutMeTitle: 'Il mio',
     aboutMeHighlight: 'Percorso',
-    aboutMeDescription: 'Mi sono avvicinato allo sviluppo web durante le superiori, imparando a creare le mie prime interfacce. Ora sto completando la mia formazione come Web Developer all\'ITS LAST.',
+    aboutMeDescription: 'Mi sono avvicinato allo sviluppo web durante le superiori, imparando a creare le mie prime interfacce. Ho completato la mia formazione come Web Developer all\'ITS LAST.',
     whoAmI: 'Chi Sono?',
-    whoAmIDescription: 'Studio sviluppo web all\'ITS LAST. Mi sto specializzando nel front-end e cerco uno stage curriculare per mettermi alla prova sul campo.',
+    whoAmIDescription: 'Ho completato la mia formazione in sviluppo web all\'ITS LAST come Full Stack Developer, e ora sono alla ricerca di nuove opportunità lavorative per mettermi alla prova sul campo.',
     downloadCV: 'Scarica il CV',
     
     // Skills
@@ -44,14 +44,14 @@ export const translations = {
   en: {
     // Hero section
     heroTitle: 'Tommaso Cont!',
-    heroSubtitle: 'Frontend Developer',
+    heroSubtitle: 'Full Stack Developer',
     
     // About Me
     aboutMeTitle: 'My',
     aboutMeHighlight: 'Journey',
-    aboutMeDescription: 'My interest in web development began in high school, where I learned to create my first interfaces. I am now completing my training as a Web Developer at ITS LAST.',
+    aboutMeDescription: 'My interest in web development began in high school, where I learned to create my first interfaces. I have completed my training as a Web Developer at ITS LAST.',
     whoAmI: 'Who Am I?',
-    whoAmIDescription: 'I study web development at ITS LAST. I am specializing in front-end and looking for a curricular internship to test my skills in the field.',
+    whoAmIDescription: 'I completed my training in web development at ITS LAST as a Full Stack Developer, and I am now seeking new career opportunities to apply my skills in the field.',
     downloadCV: 'Download CV',
     
     // Skills

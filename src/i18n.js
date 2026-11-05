@@ -1,6 +1,9 @@
 import { ref, computed } from 'vue';
 
-const currentLanguage = ref(localStorage.getItem('language') || 'it');
+let savedLanguage;
+try { savedLanguage = localStorage.getItem('language'); } catch {}
+const currentLanguage = ref(savedLanguage === 'en' ? 'en' : 'it');
+document.documentElement.lang = currentLanguage.value;
 
 export const translations = {
   it: {
@@ -94,8 +97,10 @@ export const useI18n = () => {
   };
   
   const setLanguage = (lang) => {
+    if (!['it', 'en'].includes(lang)) return;
     currentLanguage.value = lang;
-    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('language', lang); } catch {}
   };
   
   const toggleLanguage = () => {

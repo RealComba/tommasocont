@@ -11,9 +11,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@lucide/vue": "^1.43.0",
     "@tailwindcss/vite": "^4.1.14",
     "aos": "^2.3.4",
     "gsap": "^3.13.0",
+    "lucide-vue-next": "^1.0.0",
     "three": "^0.182.0",
     "typed.js": "^2.1.0",
     "vanta": "^0.5.24",
